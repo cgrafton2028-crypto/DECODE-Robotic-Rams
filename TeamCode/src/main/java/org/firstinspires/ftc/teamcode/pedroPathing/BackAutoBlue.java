@@ -16,8 +16,8 @@ import com.qualcomm.robotcore.hardware.Servo;
 
 import java.util.ArrayList;
 
-@Autonomous(name="ObeliskAutoBlue", group="Linear OpMode")
-public class ObeliskAutoBlue extends OpMode {
+@Autonomous(name="BackAutoBlue", group="Linear OpMode")
+public class BackAutoBlue extends OpMode {
     //Electronic Variables
     //Motors
     private DcMotorEx topMotor;
@@ -35,7 +35,7 @@ public class ObeliskAutoBlue extends OpMode {
     private long thirdShot = secondShot * 2;
     private int pathState;
 
-    private final Pose startPose = new Pose(21.6, 122.4, Math.toRadians(314)); // Start Pose of our robot.
+    private final Pose startPose = new Pose(48, 8, Math.toRadians(270)); // Start Pose of our robot.
     private final Pose scorePose = new Pose(63, 87, Math.toRadians(314)); // Scoring Pose of our robot. It is facing the goal at a 135 degree angle.
     private final Pose pickup1APose = new Pose(30.5, 86, Math.toRadians(180));
     private final Pose pickup1BPose = new Pose(22, 86, Math.toRadians(180));
